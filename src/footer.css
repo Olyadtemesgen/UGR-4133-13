@@ -1,0 +1,32 @@
+/* Footer */
+.footer{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    min-width: 950px;
+    min-height: 100px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.footer__social__medias__medias{
+    display: flex;
+    margin-left: 50px;
+}
+.footer__social__medias__medias .footer__social__medias__img{
+   margin: 10px;
+}
+.footer__social_medias__inline-na{
+   margin-top: 10px;
+}
+.footer__social_medias{
+    padding: 10px;
+    display: flex;
+    color: white;
+    font-size: 30px;
+}
+.footer__QandA{
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}

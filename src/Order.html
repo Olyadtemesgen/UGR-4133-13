@@ -6,44 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Online Food ordering and delivering">
     <title>Order</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Order.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media_query.css">
 </head>
+
 <body>
-    <header>
-         <div>
-            <section>
-                <img class="brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px">
+    <header class="header">
+        <div class="header__comps">
+            <section class="header__comps__brand">
+                <a href="Home.html"><img class="header__comps__brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px"></a>
             </section>
-            <section>
-                    <label for="fname">Search for:</label>
-                    <input class="" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
-                    <input type="submit" value="Search">
+    
+            <section class="header__comps__search_bar">
+                    <label class='food_search' for="fname"><span></span></label>
+                    <input class="header__comps__search_bar__search_form  submitt  input_taker" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
+                    <a href="Foods.html"><input class='food_search  submitt  header__comps__search_bar__submit_btn' type="submit" value="Search"/></a>
             </section>
-            <section>
-                <nav class="navigations">
-                    <ul>
-                        <li>
-                            <a href="Home.html">Home</a>
+            <section class="header__comps__navs_container">
+                <a href="#" class="header__comps__navs_container__toggle_button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="navbr">
+                    <ul class="navbr__navs">
+                        <li class="navbr__navs__active navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Home.html">Home</a>
                         </li>
-                        <li>
-                            <a href="MotherBets.html"> MotherBets</a>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="MotherBets.html"> MotherBets</a>
                         </li>
-                        <li><a href="About_Page.html">About Page</a></li>
-                        <li>
-                            <a href="Contacts.html"> Contact</a>
+                        <li class="navbr__navs__navs_individuals"><a class="hover__changed__sub_nav__sub___anchor" href="About_page.html">About Page</a></li>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Contacts.html"> Contact</a>
                         </li>
-                        <li>
-                            <span>Login</span>
-                            <ul>
-                                <li><a href="#">Login as Cook</a></li>
-                                <li><a href="Login.html">Login as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Login
+                            </span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="#">Login as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Student</a></li>
                                 
                             </ul>
                         </li>
-                        <li>
-                            <span>Sign Up</span>
-                            <ul>
-                                <li><a href="#">Sign up as Cook</a></li>
-                                <li><a href="Sign up.html">Sign up as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Sign Up</span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="#">Sign up as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Student</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,91 +63,103 @@
             </section>
         </div>
     </header>
-    <main>
-        <section>    
-            <h1> DORO WOT</h1>
-            <section>
-                <img src="images/icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
+
+    <main class="main_component_1">
+        <h1 class="kitchen_and_food"> SARA COOKS > DORO WOT</h1>
+        <section class="Ordering_food">
+            <section class="_icon _icon_1">
+                <img src="images/Icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
             </section>
-            <section>
+            
+            <section class="food_info">
 
                     Name: Fetan Doro Fanta<br>
-                    Kitchen: Sara's Kitchen
+                    Kitchen: Sara's Kitchen <br>
                     Payment: 150 birr<br>
-                    Address: 6 kilo MotherBets 34 House Number
+                    Address: 34 House Number
             </section>
+            
             <section>
-                    <video src="videos/Pasta.mp4" width="600px" height="600px" controls>
-                    </video>
-                </section>
-            <section>
-                    <h2>Rating:</h2>
+                <div>
+                    <video class="food_video"src="videos/Pasta.mp4"  controls></video>
+                </div>
+                <div class="rating_container">
+                    <h2 class="rating_lbl">Rating:</h2>
                     <img name="image" src="images/Icons/star1.ico" alt="This is the image thata shows The rating of the Kitchen" width="20px" height="20px">
                     <img name="image" src="images/Icons/star1.ico" alt="This is the image that vshows The rating of the Kitchen" width="20px" height="20px">
                     <img name="image" src="images/Icons/star1.ico" alt="This is the image that sbhows The rating of the Kitchen" width="20px" height="20px">
                     <img name="image" src="images/Icons/star1.ico" alt="This is the image that shnows The rating of the Kitchen" width="20px" height="20px">
                     <img name="image" src="images/Icons/star0.ico" alt="This is the image that shofws The rating of the Kitchen" width="20px" height="20px">
+                </div>    
             </section>
-            <section>
-                <img src="images/icons/Right-pointer.ico" alt="Point to The other kitchens" width="30px" height="30px">
+            
+            <section class="_icon _icon_2">
+                <img src="images/Icons/Right-pointer.ico" alt="Point to The other kitchens" width="30px" height="30px">
+            </section>
+            <section class="finder_where">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
             </section>
         </section>
-        <section>
-            <section>
-                <h1>Pay With:</h1>
-            
-                <fieldset>
-                    <legend>Payment:</legend>
-                    <div>
-                        <input type="radio" id="CBE" name="Payment"  value="CBEBirr">
+        <section class="pay_deliver">
+            <section class="payment">
+                <h1 class="pay_with">Pay With:</h1>
+                <fieldset class="fieldset">
+                    <legend class="label">Payment:</legend>
+                    <div class="taker">
+                        <input type="radio" class="inputt" id="CBE" name="Payment"  value="CBEBirr">
                         <label for="CBE">CBE Birr</label><br>
                     </div>
-                    <div>
-                        <input type="radio" id="Telebirr" name="Payment" value="Telebirr">
+                    <div class="taker">
+                        <input type="radio" class="inputt" id="Telebirr" name="Payment" value="Telebirr">
                         <label for="Telebirr">TeleBirr</label><br>
                     </div>
-                    <div>
-                        <input type="radio" id="Dashenbanking" name="Payment" value="Dashen Banking">
+                    <div class="taker">
+                        <input type="radio" class="inputt" id="Dashenbanking" name="Payment" value="Dashen Banking">
                         <label for="Dashenbanking">DashenMobile</label><br>
                     </div>
                 </fieldset>
             
             </section>
+            <section class="delivery">
+                <h1 class="deliver_with">Delivery:</h1>
+                    <fieldset class="fieldset">
+                        <legend class="label">Delivery:</legend>
+                        <div class="taker">
+                            <input type="radio" class="inputt" id="physical" name="Delivery"  value="Physical">
+                            <label for="physical">Physical</label><br>
+                        </div>
+                        <div class="taker">
+                            <input type="radio" class="inputt" id="Friend" name="Delivery" value="friend">
+                            <label for="Friend">Friend</label><br>
+                        </div>
+                        <div class="taker">
+                            <input type="radio" class="inputt" id="delivery" name="Delivery" value="Delivery">
+                            <label for="delivery" >Delivery by Yadrisu delivery</label><br>
+                        </div>
+                    </fieldset>
+            </section>
         </section>
         <section>
-            <h1>Delivery:</h1>
-                <fieldset>
-                    <legend>Delivery:</legend>
-                    <div>
-                        <input type="radio" id="physical" name="Delivery"  value="Physical">
-                        <label for="physical">Physical</label><br>
-                    </div>
-                    <div>
-                        <input type="radio" id="Friend" name="Delivery" value="friend">
-                        <label for="Friend">Friend</label><br>
-                    </div>
-                    <div>
-                        <input type="radio" id="delivery" name="Delivery" value="Delivery">
-                        <label for="delivery" >Delivery by Yadrisu delivery</label><br>
-                    </div>
-                </fieldset>
-        </section>
-        <section>
-                <button>Order</button>
+                <button class="order_btn">Order</button>
         </section>
     
     </main>
-    <footer>
-        <span class="inline-navigation label">Find Us On:</span>
-        <section>
-            <a href="mailto:olexyit@gmail.com"><img src="images/icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a>
-            <a href="https://facebook.com"><img src="images/icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a>
-            <a href="tel:+251979657127"><img src="images/icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
-            <a href="t.me/@oliyitu"><img src="images/icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a>
-        </section>
-        <section>
-            <a href="Contacts.html#question">Do u have a Question?</a>
-        </section>
+    <footer class="footer">
+        <div class="footer__social_medias">
+            <span class="footer__social_medias__inline-nav">Find Us On:</span>
+            <ul class="footer__social__medias__medias">
+                <li><a href="mailto:olexyit@gmail.com"><img class="footer__social__medias__img" src="images/Icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
+                <li><a href="https://facebook.com"><img class="footer__social__medias__img" src="images/Icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
+                <li><a href="tel:+251979657127"><img class="footer__social__medias__img" src="images/Icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
+                <li><a href="t.me/@oliyitu"><img class="footer__social__medias__img" src="images/Icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
+            </ul>
+        </div>
+        <div class="footer__QandA">
+            <a class="footer__QandA" href="Contacts.html#question">Do u have a Question?</a>
+        </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>

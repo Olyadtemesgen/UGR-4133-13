@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Online Food ordering and delivering">
     <title>About Page</title>
+    <link rel="stylesheet" href="About_page.css">
 </head>
-<body>
-    <header>
-        <div>
-            <section>
-                <img class="brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px">
+
+<body class="body">
+    <header class="header">
+        <div class="header__comps">
+            <section class="header__comps__brand">
+                <a href="Home.html"><img class="header__comps__brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px"></a>
             </section>
-            <section>
-                    <label for="fname">Search for:</label>
-                    <input class="" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
-                    <input type="submit" value="Search">
+    
+            <section class="header__comps__search_bar">
+                    <label class='food_search' for="fname"><span></span></label>
+                    <input class="header__comps__search_bar__search_form  submitt  input_taker" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
+                    <a href="Foods.html"><input class='food_search  submitt  header__comps__search_bar__submit_btn' type="submit" value="Search"/></a>
             </section>
-            <section>
-                <nav class="navigations">
-                    <ul>
-                        <li>
-                            <a href="Home.html">Home</a>
+            <section class="header__comps__navs_container">
+                <a href="#" class="header__comps__navs_container__toggle_button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="navbr">
+                    <ul class="navbr__navs">
+                        <li class="navbr__navs__active navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Home.html">Home</a>
                         </li>
-                        <li>
-                            <a href="MotherBets.html"> MotherBets</a>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="MotherBets.html"> MotherBets</a>
                         </li>
-                        <li><a href="About_Page.html">About Page</a></li>
-                        <li>
-                            <a href="Contacts.html"> Contact</a>
+                        <li class="navbr__navs__navs_individuals"><a class="hover__changed__sub_nav__sub___anchor" href="About_page.html">About Page</a></li>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Contacts.html"> Contact</a>
                         </li>
-                        <li>
-                            <span>Login</span>
-                            <ul>
-                                <li><a href="#">Login as Cook</a></li>
-                                <li><a href="Login.html">Login as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Login
+                            </span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Student</a></li>
                                 
                             </ul>
                         </li>
-                        <li>
-                            <span>Sign Up</span>
-                            <ul>
-                                <li><a href="#">Sign up as Cook</a></li>
-                                <li><a href="Sign up.html">Sign up as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Sign Up</span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Student</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,24 +60,22 @@
             </section>
         </div>
     </header>
-    <main>
-        <div>
-            <h1>Contents:</h1>
-            <ol>
-                <li><a href="#what">What Does MotherBets do</a></li>
-                <li><a href="#motivation">Motivation Behind the project</a></li>
-                <li><a href="#mission">Mission and Vision</a></li>
-                <li><a href="#video">About the project in video format</a></li>
-                <li><a href="#audio">About the project in audio format</a></li>
+    <main class="main_page">
+        <div class="table_of_contents">
+            <h1 class="table_of_contents__h1">Contents:</h1> 
+            <ol class="table_of_contents__contents">
+                <li class="table_of_contents__contents__content"><a class="table_of_contents__contents__content"href="#what">What Does MotherBets do</a></li>
+                <li class="table_of_contents__contents__content"><a class="table_of_contents__contents__content"href="#motivation">Motivation Behind the project</a></li>
+                <li class="table_of_contents__contents__content"><a class="table_of_contents__contents__content"href="#mission">Mission and Vision</a></li>
+                <li class="table_of_contents__contents__content"><a class="table_of_contents__contents__content"href="#video">About the project in video format</a></li>
+                <li class="table_of_contents__contents__content"><a class="table_of_contents__contents__content"href="#audio">About the project in audio format</a></li>
             </ol>
         </div>
-        <article>
-            <section id="what">
-                <h1>1. About MotherBets.</h1>
-                <p>    
-                    As we all know the term <details><summary>motherbet</summary>
-                    <p>Motherbet is a word that comes from two different language words of english (Mother) and amharic (bet) meaning house</p>
-                    </details> is famous among Addis Ababa University Students. 
+        <article class="thearticles">
+            <section class="define_motherbets" id="what">
+                <h1 class="define_motherbets__content">1. About MotherBets.</h1>
+                <p class="define_motherbets__About">    
+                   Motherbet is a word that comes from two different language words of english (Mother) and amharic (bet) meaning house                    is famous among Addis Ababa University Students. 
                     Motherbet is Is a small kitchen like restaurant around Addis abeba university campuses 
                     and the food they make are mostly less expensive than we get in hotel and 
                     normal restaurants. It is also around the campus and 
@@ -84,9 +91,9 @@
                     our economic culture. Motherbets can also promote their product easily and it helps students to get what they need.
                 </p>
             </section>
-            <section id="motivation">
+            <section class="motivation" id="motivation">
                 <h1>2. Motivation behind the project</h1>
-                <p>
+                <p class="motivation__Motivation">
                     As a student of AAiT we all are a costumers of motherbets and personally 
                     I have been observing some problems around the services and stuffs like that. 
                     For example, some kitchens make good food but they do not get that much attention 
@@ -98,9 +105,9 @@
                     Due to the problems I tried to enumerate above I tried to solve using my field.
                 </p>
             </section>
-            <section id="mission">
+            <section class="Mission" id="mission">
                 <h1>3.Mission and the website</h1>
-                <p>
+                <p class="Mission__mission">
                     As I tried to express in <a href="#motivation">Motivation Behind the project</a> part We try to reduce 
                     the time energy lose during the process of getting food in motherbets.
                     The way we try to solve is that we make the website that try to connect the costumers(Students) and 
@@ -110,28 +117,33 @@
                     our economic culture. Motherbets can also promote their product easily and it helps students to get what they need.
                 </p>
             </section>
+            <section class="Audio"id="audio">
+                <h1>4. Audio Description of The Company</h1>
+                <audio class="Audio__audio" controls>
+                    <source src="audios/sound.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                  </audio>
+            </section>
+            <section class="Video"id="video">
+                <h1>4. Vedio Description of The Company</h1>
+                <video class="Video__video" src="videos/mamas.mp4"  controls="controls" alt="the video"></video>
+            </section>
         </article>
-        <section id="video">
-            <h1>4. Vedio Description of The Company</h1>
-            <video src="videos/mamas.mp4" width="800px" height="650px" controls></video>
-        </section>
-        <section id="audio">
-            <h1>4. Audio Description of The Company</h1>
-            <audio controls>
-                <source src="audios/sound.mp3" type="audio/mp3">
-              Your browser does not support the audio element.
-              </audio>
-        </section>
     </main>
-    <footer>
-        <span class="inline-navigation label">Find Us On:</span>
-        <ul>
-            <li><a href="mailto:olexyit@gmail.com"><img src="images/icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
-            <li><a href="https://facebook.com"><img src="images/icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
-            <li><a href="tel:+251979657127"><img src="images/icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
-            <li><a href="t.me/@oliyitu"><img src="images/icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
-        </ul>
-        <a href="Contacts.html#question">Do u have a Question?</a>
+    <footer class="footer">
+        <div class="footer__social_medias">
+            <span class="footer__social_medias__inline-nav">Find Us On:</span>
+            <ul class="footer__social__medias__medias">
+                <li><a href="mailto:olexyit@gmail.com"><img class="footer__social__medias__img" src="images/Icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
+                <li><a href="https://facebook.com"><img class="footer__social__medias__img" src="images/Icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
+                <li><a href="tel:+251979657127"><img class="footer__social__medias__img" src="images/Icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
+                <li><a href="t.me/@oliyitu"><img class="footer__social__medias__img" src="images/Icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
+            </ul>
+        </div>
+        <div class="footer__QandA">
+            <a class="footer__QandA" href="Contacts.html#question">Do u have a Question?</a>
+        </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>

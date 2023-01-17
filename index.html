@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=max-width, initial-scale=1.0"> 
+        <meta name="description" content="Online Food ordering and delivering">
+        <title>Home</title>
+        <link rel="stylesheet" href="Home.css">
+        <!-- <title>MotherBets</title> -->
+        <!-- <link rel="stylesheet" href="MotherBets.css"> -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__comps">
+                <section class="header__comps__brand">
+                    <a href="index.html"><img class="header__comps__brand" src="src/images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px"></a>
+                </section>
+        
+                <section class="header__comps__search_bar">
+                        <label class='food_search' for="fname"><span></span></label>
+                        <input class="header__comps__search_bar__search_form  submitt  input_taker" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
+                        <a href="src/Foods.html"><input class='food_search  submitt  header__comps__search_bar__submit_btn' type="submit" value="Search"/></a>
+                </section>
+                <section class="header__comps__navs_container">
+                    <a href="#" class="header__comps__navs_container__toggle_button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <nav class="navbr">
+                        <ul class="navbr__navs">
+                            <li class="navbr__navs__active navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="index.html">Home</a>
+                            </li>
+                            <li class="navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="src/MotherBets.html"> MotherBets</a>
+                            </li>
+                            <li class="navbr__navs__navs_individuals"><a class="hover__changed__sub_nav__sub___anchor" href="src/About_page.html">About Page</a></li>
+                            <li class="navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="src/Contacts.html"> Contact</a>
+                            </li>
+                            <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                                <span class="navbr__navs__navs_individuals__span">Login
+                                </span>
+                                <ul class="hover__changed__sub_nav">
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="src/Login.html">Login as Cook</a></li>
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="src/Login.html">Login as Student</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                                <span class="navbr__navs__navs_individuals__span">Sign Up</span>
+                                <ul class="hover__changed__sub_nav">
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="src/Sign up.html">Sign up as Cook</a></li>
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="src/Sign up.html">Sign up as Student</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
+        <main class="main_page">
+            <div class="background">
+            <section class="main_page__upper_content">
+                <h1 class="main_page__upper_content__under_header">SPONSOR KITCHENS</h1>
+            </section>
+            <div class="main_page__upper_content__main_content_1">
+                <section onclick="changeImage()" id="icons_1" class="_icon icon_">
+                    <img src="src/images/Icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
+                </section>
+                <section id="info_" class="main_page__upper_content__content_1">
+                        Special of the day: Beyaynet<br>
+                        Payment: 80 birr<br>
+                        Address: 6 kilo MotherBets
+                </section>
+                <div >
+                    <a href="Foods.html"><img class="main_page__upper_content__sponsor" id="sponsor" src="src/images/Foods/beyaynet1.jpg" alt="The brand and name of the Sponsor Kitchen"></a><br>
+                    <section class="main_page__upper_content__rating_container">
+                        <h2>Rating:</h2>
+                        <div class="rating__container__stars">
+                            <img name="image" src="src/images/Icons/star1.ico" alt="This is the image that shows The rating of the Kitchen" width="20px" height="20px">
+                            <img name="image" src="src/images/Icons/star1.ico" alt="This is the image that shows The rating of the Kitchen" width="20px" height="20px">
+                            <img name="image" src="src/images/Icons/star1.ico" alt="This is the image athat shows The rating of the Kitchen" width="20px" height="20px">
+                            <img name="image" src="src/images/Icons/star1.ico" alt="This is the image bthat shows The rating of the Kitchen" width="20px" height="20px">
+                            <img name="image" src="src/images/Icons/star0.ico" alt="This is the image cthat shows The rating of the Kitchen" width="20px" height="20px">
+                        </div>
+                    </section>
+                </div>
+                <div onclick="changeImage()" id="icons_1" class="_icon icon_">
+                    <img src="src/images/Icons/Right-pointer.ico" alt="Point to The other kitchens" width="30px" height="30px">
+                </div>      
+            </div>
+            <section class="finder_where">
+                <div id="first"class="finder_where__finder finder_where__first"></div>
+                <div id="second"class="finder_where__finder finder_where__second"></div>
+                <div id="third"class="finder_where__finder finder_where__third"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__social_medias">
+                <span class="footer__social_medias__inline-nav">Find Us On:</span>
+                <ul class="footer__social__medias__medias">
+                    <li><a href="mailto:olexyit@gmail.com"><img class="footer__social__medias__img" src="src/images/Icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
+                    <li><a href="https://facebook.com"><img class="footer__social__medias__img" src="src/images/Icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
+                    <li><a href="tel:+251979657127"><img class="footer__social__medias__img" src="src/images/Icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
+                    <li><a href="t.me/@oliyitu"><img class="footer__social__medias__img" src="src/images/Icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+            <div class="footer__QandA">
+                <a class="footer__QandA" href="Contacts.html#question">Do u have a Question?</a>
+            </div>
+        </footer>
+        <script src="home.js"></script>
+    </body>
+</html>
+

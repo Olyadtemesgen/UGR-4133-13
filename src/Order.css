@@ -1,0 +1,353 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+  
+        font-family: "Lucida Console", "Brush Script MT", serif;
+        font-weight: bold;
+     
+  
+    min-height: 100vh; 
+}
+.videos{
+    z-index: 0px;
+}
+/* Header */
+.header{
+    min-height: 140px;
+    background-color: white;
+    background-image: linear-gradient(90deg,rgba(255,0,0,0) 0%,rgba(255,0,0,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: sticky;
+    top: 0px;
+    opacity: 1;
+    z-index: 100px;
+    background-size: cover;
+    min-width: 1000px;
+    
+}
+.header:hover{
+    background-color: yellow;
+    transition: all 2s;
+}
+.header__comps{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+}
+.header__comps__search_bar{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 1.5em;
+}
+.header__comps__navs_container{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+}
+.navbr__navs{
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header__comps__brand{
+    max-width: 150px;
+    height: 100px;
+    grid-row: 1/4;
+    margin-top: 0.6em;
+    margin-left: 4%;
+}
+.navbr__navs__hover_changed{
+    position: relative;
+}
+.hover__changed__sub_nav{
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(255,255,0,0.4) 0%, rgba(255, 0, 0, 0.7));
+    top:19px;
+    min-width: 180px;
+    padding:20px 0px;
+}
+.hover__changed__sub_nav__sub_:hover{
+    background-color: rgba(80, 80, 80, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbr__navs__navs_individuals{
+    
+    margin: 0 25px;
+    text-transform: uppercase;
+    max-height: 20px;
+    color: black;
+    font-weight: bold;
+}
+.hover__changed__sub_nav__sub___anchor{
+    color: black;
+}
+.navbr__navs__navs_individuals > .hover__changed__sub_nav__sub___anchor:hover,
+ .navbr__navs__navs_individuals > .hover__changed__sub_nav__sub_, 
+         .navbr__navs__hover_changed > .navbr__navs__navs_individuals__span:hover{
+    background-color: rgba(80, 80, 80, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.navbr__navs__hover_changed:hover .hover__changed__sub_nav{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.header__comps__search_bar__search_form{
+    text-align: center;
+    background-color: orange; 
+    border-radius: 29px; 
+    border: 1px solid #081F2D; 
+    color: blue; 
+    font-size: 20px; 
+    padding: 5px 20px; 
+    cursor: pointer; 
+    transition: 0.3s;
+    min-width: 300px;
+    max-width: 400px;
+}
+.header__comps__search_bar__submit_btn{
+    background-color: rgb(0, 0, 128); 
+    border-radius: 29px; 
+    border: 1px solid #081F2D; 
+    color: orange; 
+    font-size: 15px; 
+    padding: 5px 20px; 
+    cursor: pointer; 
+    transition: 0.3s;
+    margin-left: 30px; 
+    }
+    
+.header__comps__search_bar__submit_btn:hover{ 
+    transition: 0.3s; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+.header__comps__navs_container__toggle_button{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+}.header__comps__navs_container__toggle_button .bar{
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* Footer */
+.footer{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    min-width: 950px;
+    min-height: 100px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.footer__social__medias__medias{
+    display: flex;
+    margin-left: 50px;
+}
+.footer__social__medias__medias .footer__social__medias__img{
+   margin: 10px;
+}
+.footer__social_medias__inline-na{
+   margin-top: 10px;
+}
+.footer__social_medias{
+    padding: 10px;
+    display: flex;
+    color: white;
+    font-size: 30px;
+}
+.footer__QandA{
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+@media(max-width:1000px){
+}
+.main_component_1{
+    min-width: 1000px;
+}
+.kitchen_and_food{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+.Ordering_food{
+    display: flex;
+    
+    grid-template-columns: 1fr 5fr 8fr 1fr;
+    margin:70px 0px 100px 0px;
+}
+
+.food_info{
+    margin: 150px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.rating_container{
+    display: flex;
+    margin-left:60%;
+}
+._icon{
+    margin-top: 170px;
+    box-shadow: 4px 4px 4px 4px black;
+    width: 35px;
+    height: 35px;
+}
+._icon_1{
+    margin-left: 30px;
+}
+._icon_2{
+    margin-right: 30px;
+}
+.food_video{
+    border-radius: 15px; 
+    width: 90%;
+    margin-bottom: 30px;
+}
+.finder_where{
+    display: none;
+}
+.pay_deliver{
+    gap: 40px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    gap: 80px;
+    margin-left:10% ;
+}
+.taker{
+    margin-bottom: 50px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.label{
+    margin-bottom: 40px;
+}
+.pay_with{
+    margin-bottom: 40px;
+}
+.deliver_with{
+    margin-bottom: 40px;
+}
+.fieldset{
+    margin-left: 50px;
+}
+.order_btn{
+    position: absolute;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 80%;
+    border-radius: 20px;
+    min-width: 150px;
+    min-height: 45px;
+    font-size:20px ;
+    background-color: chartreuse;
+}
+.order_btn:hover{
+    background-color: blue;
+    transition: all 1s;
+    color: yellow;
+}
+.inputt {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+  
+  .inputt:checked {
+    border: 13px solid navy;
+    outline: unset !important /* I added this one for Edge (chromium) support */
+  }
+.payment, .delivery{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 40%;
+    min-height: 600px;
+    background-image: linear-gradient(90deg,rgba(255,0,0,0) 0%,rgba(255,0,0,1) 100%);
+    border-radius: 20px;
+    color: black;
+}
+.delivery{
+    background-image:  linear-gradient(90deg,rgba(255,0,0,1) 0%,rgba(255,0,0,0) 100%);
+}
+.delivery:hover{
+    transition: all 2s;
+    background-image:  linear-gradient(90deg,rgba(255,0,0,1) 0%,rgba(255, 255, 0, 1) 100%);
+}
+.payment:hover{
+    transition: all 2s;
+    background-image: linear-gradient(90deg,rgba(255,255,0,1) 0%,rgba(255,0,0,1) 100%);
+}
+@media (max-width:1300px){
+    .delivery, .payment{
+        width: 80%;
+        background-image:  linear-gradient(90deg,rgba(255,0,0,1) 0%,rgba(255,0,0,0) 100%);
+    }
+}
+@media (max-width:1000px){
+    ._icon{
+        display: none;
+    }
+    .food_video{
+        margin-left: 45px;
+        margin-right: 20px;
+        width: 90%;
+    }
+    .Ordering_food{
+        display: block;
+    }
+    .food_info{
+        margin: 40px auto;
+        font-size: 30px;
+    }
+    .finder_where{
+        display: flex;
+        margin-left: 45%;
+    }
+    .finder_where > div{
+        
+        background-color: #a0a0a0;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+    }
+}

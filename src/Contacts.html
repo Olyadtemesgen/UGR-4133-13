@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Online Food ordering and delivering">
     <title>Document</title>
+    <link rel="stylesheet" href="Contacts.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <section>
-                <img class="brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px">
+    <header class="header">
+        <div class="header__comps">
+            <section class="header__comps__brand">
+                <a href="Home.html"><img class="header__comps__brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px"></a>
             </section>
-            <section>
-                    <label for="fname">Search for:</label>
-                    <input class="" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
-                    <input type="submit" value="Search">
+    
+            <section class="header__comps__search_bar">
+                    <label class='food_search' for="fname"><span></span></label>
+                    <input class="header__comps__search_bar__search_form  submitt  input_taker" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
+                    <a href="Foods.html"><input class='food_search  submitt  header__comps__search_bar__submit_btn' type="submit" value="Search"/></a>
             </section>
-            <section>
-                <nav class="navigations">
-                    <ul>
-                        <li>
-                            <a href="Home.html">Home</a>
+            <section class="header__comps__navs_container">
+                <a href="#" class="header__comps__navs_container__toggle_button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="navbr">
+                    <ul class="navbr__navs">
+                        <li class="navbr__navs__active navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Home.html">Home</a>
                         </li>
-                        <li>
-                            <a href="MotherBets.html"> MotherBets</a>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="MotherBets.html"> MotherBets</a>
                         </li>
-                        <li><a href="About_Page.html">About Page</a></li>
-                        <li>
-                            <a href="Contacts.html"> Contact</a>
+                        <li class="navbr__navs__navs_individuals"><a class="hover__changed__sub_nav__sub___anchor" href="About_page.html">About Page</a></li>
+                        <li class="navbr__navs__navs_individuals">
+                            <a class="hover__changed__sub_nav__sub___anchor"href="Contacts.html"> Contact</a>
                         </li>
-                        <li>
-                            <span>Login</span>
-                            <ul>
-                                <li><a href="#">Login as Cook</a></li>
-                                <li><a href="Login.html">Login as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Login
+                            </span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Student</a></li>
                                 
                             </ul>
                         </li>
-                        <li>
-                            <span>Sign Up</span>
-                            <ul>
-                                <li><a href="#">Sign up as Cook</a></li>
-                                <li><a href="Sign up.html">Sign up as Student</a></li>
+                        <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                            <span class="navbr__navs__navs_individuals__span">Sign Up</span>
+                            <ul class="hover__changed__sub_nav">
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Cook</a></li>
+                                <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Student</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,41 +60,48 @@
             </section>
         </div>
     </header>
-    <footer>
-        <span class="inline-navigation label">Find Us On:</span>
-        <section>
-            <ul>
-                <li><img src="images/icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px">
-                    <a href="mailto:olexyit@gmail.com">Send Email</a>
+    <footer class="footer_class">
+        <section class="footer_class__social_medias">
+        <span class="social_medias__inline-navigation label">Find Us On:</span>
+        
+            <ul class="social_medias__socials">
+                <li class="social_medias__socials_li"><img src="images/Icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px">
+                    <a class=social_medias__real" href="mailto:olexyit@gmail.com">Send Email</a>
                 </li>
-                <li><img src="images/icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px">
-                    <a href="https://facebook.com">Motherbets</a>
+                <li class="social_medias__socials_li"><img src="images/Icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px">
+                    <a class=social_medias__real" href="https://facebook.com">Motherbets</a>
                 </li>
-                <li><img src="images/icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px">
-                    <a href="tel:+251979657127">+251979657127</a>
+                <li class="social_medias__socials_li"><img src="images/Icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px">
+                    <a class=social_medias__real" href="tel:+251979657127">+251979657127</a>
                 </li>
-                <li><img src="images/icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px">
-                    <a href="t.me/@oliyitu">t.me/@oliyitu</a>
+                <li class="social_medias__socials_li"><img src="images/Icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px">
+                    <a class=social_medias__real" href="t.me/@oliyitu">t.me/@oliyitu</a>
                 </li>
             </ul>
         </section>
-        <section>
-            <h1>LOCATION</h1>
+        <section class="add_info__location">
+            <h1 class="add_info__location__h1">LOCATION</h1>
             <iframe title="The map of the head beareue" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.255976900104!2d38.761128214235434!3d9
             .040398791300861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddi
             s%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1672092152672!5m2!1sen!2sus"
              width="600" height="450" style="border:0;" 
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <div id="question">
+          <section class="add_info__copy_right">
+            Copyright &copy; 2023 Olyad Temesgen. All Right Reserved.
+        </section>
+        <section class="add_info__question">
             <p>
                 If you have any question, advice or suggestion please put in the input below
             </p>
             <label for="questions">Questions:</label>
-            <input type="text" name="questions" id="questions"><br>
+            <input class="question__input" type="text" name="questions" id="questions"><br>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </div>
+            <input class="question__input" type="email" name="email" id="email"><br>
+            <button class="submit_btn"><a href="mailto:olexyit@gmail.com">Submit</a></button>
+        </section>
+ 
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>

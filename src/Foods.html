@@ -1,176 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online Food ordering and delivering">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div>
-            <section>
-                <img class="brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Online Food ordering and delivering">
+        <title>Home</title>
+        <link rel="stylesheet" href="Foods.css">
+        <!-- <title>MotherBets</title> -->
+        <!-- <link rel="stylesheet" href="MotherBets.css"> -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__comps">
+                <section class="header__comps__brand">
+                    <a href="Home.html"><img class="header__comps__brand" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate" width="250" height="150px"></a>
+                </section>
+        
+                <section class="header__comps__search_bar">
+                        <label class='food_search' for="fname"><span></span></label>
+                        <input class="header__comps__search_bar__search_form  submitt  input_taker" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
+                        <a href="Foods.html"><input class='food_search  submitt  header__comps__search_bar__submit_btn' type="submit" value="Search"/></a>
+                </section>
+                <section class="header__comps__navs_container">
+                    <a href="#" class="header__comps__navs_container__toggle_button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <nav class="navbr">
+                        <ul class="navbr__navs">
+                            <li class="navbr__navs__active navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="Home.html">Home</a>
+                            </li>
+                            <li class="navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="MotherBets.html"> MotherBets</a>
+                            </li>
+                            <li class="navbr__navs__navs_individuals"><a class="hover__changed__sub_nav__sub___anchor" href="About_page.html">About Page</a></li>
+                            <li class="navbr__navs__navs_individuals">
+                                <a class="hover__changed__sub_nav__sub___anchor"href="Contacts.html"> Contact</a>
+                            </li>
+                            <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                                <span class="navbr__navs__navs_individuals__span">Login
+                                </span>
+                                <ul class="hover__changed__sub_nav">
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="#">Login as Cook</a></li>
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor" href="Login.html">Login as Student</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="navbr__navs__hover_changed navbr__navs__navs_individuals">
+                                <span class="navbr__navs__navs_individuals__span">Sign Up</span>
+                                <ul class="hover__changed__sub_nav">
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="#">Sign up as Cook</a></li>
+                                    <li class="hover__changed__sub_nav__sub_"><a class="hover__changed__sub_nav__sub___anchor"href="Sign up.html">Sign up as Student</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
+        <main class="main_content_1">
+            <h1 id="kitchen" class="kitchen">SARA COOKS</h1>
+            <section class="main_page">
+            <section onclick="table_changer()">
+            <img  id="icon_" class="_icon" src="images/Icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
             </section>
             <section>
-                    <label for="fname">Search for:</label>
-                    <input class="" type="text" id="fname" name="fname" placeholder="Search for a cook or a food">
-                    <input type="submit" value="Search">
+            <table class="table">
+                <tr class="table__tr">
+                    <th class="table__tr__th">Foods Now Available</th>
+                    <th class="table__tr__th">Price</th>
+                    <th class="table__tr__th">Time You Need To Wait</th>
+                    <th class="table__tr__th">Food Sample Image</th>
+                    <th class="table__tr__th">Rating</th>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="Order.html">Ertib</a></td>
+                    <td class="table__tr__td">30 birr</td>
+                    <td class="table__tr__td">30 minutes</td>
+                    <td class="table__tr__td"><a href="Order.html"><img class='images_food'src="images/Foods2/ertib.jpg" alt="The picture of ertib of sara kitchen"  width="240px" height="320px"></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shaows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shobws The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that showns The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that showsm The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows hThe rating of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="#">Firfir</a></td>
+                    <td class="table__tr__td">50 birr</td>
+                    <td class="table__tr__td">1.5 hours</td>
+                    <td class="table__tr__td"><a href="Order.html"><img class='images_food'src="images/Foods2/firfir.jpg" alt="The picture of firfir of sara kitchen"  width="240px" height="320px"></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows Thea rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows The vrating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows The rbating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows The ragting of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shows The rateing of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="Foods.html">Beyaynet</a></td>
+                    <td class="table__tr__td">50 birr</td>
+                    <td class="table__tr__td">1 hours</td>
+                    <td class="table__tr__td"><a href="Order.html"><img class="images_food"src="images/Foods2/beyaynet.jpg" alt="The picture of beyaynet of sara kitchen"  width="240px" height="320px"></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image thata shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that gshows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shhows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shjows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that shorws The rating of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="Order.html">Tegabino</a></td>
+                    <td class="table__tr__td">50 birr</td>
+                    <td class="table__tr__td">1 hours</td>
+                    <td class="table__tr__td"><a href="Order.html"><img class="images_food"src="images/Foods2/Tegabino.jpg" alt="The picture of tegabino of sara kitchen" width="240px" height="320px"></a></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image thaat shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image thatb shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that mshows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image that sthows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star0.ico" alt="This is the image that shsows The rating of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="index.html">Pasta</a></td>
+                    <td class="table__tr__td">50 birr</td>
+                    <td class="table__tr__td">2 hours</td>
+                    <td class="table__tr__td"><a href="Order.html"><img class="images_food"src="images/Foods2/pasta.jpg" alt="The picture of tegabino of sara kitchen"  width="240px" height="320px" ></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image tahat shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image thvat shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the image thabt shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star0.ico" alt="This is the image thatn shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star0.ico" alt="This is the image that hshows The rating of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__tr__td"><a href="Order.html">Tegabino</a></td>
+                    <td class="table__tr__td">50 birr</td>
+                    <td class="table__tr__td">1 hours</td>
+                    <td class="table__tr__td"><a href="#"><img class="images_food"src="images/Foods2/Tegabino.jpg" alt="The picture of tegabino of sara kitchen" width="240px" height="320px"></a></td>
+                    <td class="table__tr__td">
+                        <div>
+                            <!-- <h2 class="rating_lbl">Rating:</h2> -->
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the imaage that shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the imagee that shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star1.ico" alt="This is the imager that shows The rating of the Kitchen" width="12px" height="12px">
+                            <iclass="images_food"mg class="star__image" src="images/Icons/star0.ico" alt="This is the image ythat shows The rating of the Kitchen" width="12px" height="12px">
+                            <img class="star__image" src="images/Icons/star0.ico" alt="This is the image tuhat shows The rating of the Kitchen" width="12px" height="12px">
+                        </div>
+                    </td>
+                </tr>
+            </table>
             </section>
-            <section>
-                <nav class="navigations">
-                    <ul>
-                        <li>
-                            <a href="Home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="MotherBets.html"> MotherBets</a>
-                        </li>
-                        <li><a href="About_Page.html">About Page</a></li>
-                        <li>
-                            <a href="Contacts.html"> Contact</a>
-                        </li>
-                        <li>
-                            <span>Login</span>
-                            <ul>
-                                <li><a href="#">Login as Cook</a></li>
-                                <li><a href="Login.html">Login as Student</a></li>
-                                
-                            </ul>
-                        </li>
-                        <li>
-                            <span>Sign Up</span>
-                            <ul>
-                                <li><a href="#">Sign up as Cook</a></li>
-                                <li><a href="Sign up.html">Sign up as Student</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+            <section onclick="table_changer()">
+            <img id="icon" class="_icon" src="images/Icons/Right-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
             </section>
-        </div>
-    </header>
-    <main>
-
-        <h1>SARA COOKS</h1>
-        <img src="images/icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
-        <table>
-            <tr>
-                <th>Foods Now Available</th>
-                <th>Price</th>
-                <th>Time You Need To Wait</th>
-                <th>Food Sample Image</th>
-                <th>Rating</th>
-            </tr>
-            <tr>
-                <td><a href="Order.html">Ertib</a></td>
-                <td>30 birr</td>
-                <td>30 minutes</td>
-                <td><a href="Order.html"><img src="images/Foods2/ertib.jpg" alt="The picture of ertib of sara kitchen"  width="240px" height="320px"></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shaows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shobws The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that showns The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that showsm The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows hThe rating of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="#">Firfir</a></td>
-                <td>50 birr</td>
-                <td>1.5 hours</td>
-                <td><a href="Order.html"><img src="images/Foods2/firfir.jpg" alt="The picture of firfir of sara kitchen"  width="240px" height="320px"></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows Thea rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The vrating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The rbating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The ragting of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The rateing of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="Foods.html">Beyaynet</a></td>
-                <td>50 birr</td>
-                <td>1 hours</td>
-                <td><a href="Order.html"><img src="images/Foods2/beyaynet.jpg" alt="The picture of beyaynet of sara kitchen"  width="240px" height="320px"></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image thata shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that gshows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shhows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shjows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that shorws The rating of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="Order.html">Tegabino</a></td>
-                <td>50 birr</td>
-                <td>1 hours</td>
-                <td><a href="Order.html"><img src="images/Foods2/Tegabino.jpg" alt="The picture of tegabino of sara kitchen" width="240px" height="320px"></a></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image thaat shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image thatb shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that mshows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image that sthows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star0.ico" alt="This is the image that shsows The rating of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="index.html">Pasta</a></td>
-                <td>50 birr</td>
-                <td>2 hours</td>
-                <td><a href="Order.html"><img src="images/Foods2/pasta.jpg" alt="The picture of tegabino of sara kitchen"  width="240px" height="320px" ></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image tahat shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image thvat shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the image thabt shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star0.ico" alt="This is the image thatn shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star0.ico" alt="This is the image that hshows The rating of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="Order.html">Tegabino</a></td>
-                <td>50 birr</td>
-                <td>1 hours</td>
-                <td><a href="#"><img src="images/Foods2/Tegabino.jpg" alt="The picture of tegabino of sara kitchen" width="240px" height="320px"></a></td>
-                <td>
-                    <div>
-                        <h2>Rating:</h2>
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the imaage that shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the imagee that shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star1.ico" alt="This is the imager that shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star0.ico" alt="This is the image ythat shows The rating of the Kitchen" width="20px" height="20px">
-                        <img name="image" src="images/Icons/star0.ico" alt="This is the image tuhat shows The rating of the Kitchen" width="20px" height="20px">
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <img src="images/icons/Right-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
-    </main>
-    <footer>
-        <span class="inline-navigation label">Find Us On:</span>
-        <ul>
-            <li><a href="mailto:olexyit@gmail.com"><img src="images/icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
-            <li><a href="https://facebook.com"><img src="images/icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
-            <li><a href="tel:+251979657127"><img src="images/icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
-            <li><a href="t.me/@oliyitu"><img src="images/icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
-        </ul>
-        <a href="Contacts.html#question">Do u have a Question?</a>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__social_medias">
+                <span class="footer__social_medias__inline-nav">Find Us On:</span>
+                <ul class="footer__social__medias__medias">
+                    <li><a href="mailto:olexyit@gmail.com"><img class="footer__social__medias__img" src="images/Icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
+                    <li><a href="https://facebook.com"><img class="footer__social__medias__img" src="images/Icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
+                    <li><a href="tel:+251979657127"><img class="footer__social__medias__img" src="images/Icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
+                    <li><a href="t.me/@oliyitu"><img class="footer__social__medias__img" src="images/Icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+            <div class="footer__QandA">
+                <a class="footer__QandA" href="Contacts.html#question">Do u have a Question?</a>
+            </div>
+        </footer>
+        <script src="home.js"></script>
+        <script src="Foods.js"></script>
+    </body>
 </html>
