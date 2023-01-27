@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid sticky-top bg-secondary">
+        <section class="row gx-3">
+            <section class="col-3">
+                <a  href="Home.html"><img class="img-fluid" src="images/Brand.png" alt="The brand of MotherBets Company having colors of chocholate"></a>
+            </section>
+            <section class="col-9 justify-content-center text-center align-items-center gy-3">
+                <form class="d-flex  me-5 ">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success text-danger  btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="gap-md-5 navbar-nav me-auto mb-2 mb-lg-0 justify-content-between text-white">
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="Home.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="MotherBets.html">MotherBets</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="About_page.html">About Page</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="Contacts.html"> Contacts</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Login
+                            </a>
+                            <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="Login.html">Login as a student</a></li>
+                              <li><a class="dropdown-item" href="Login.html">Login As a Cook</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Sign up
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="Sign up.html">Sign up as a student</a></li>
+                              <li><a class="dropdown-item" href="Sign up.html">Sign up As a Cook</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main class="main_page bg-light">
+        <section class="text-center m-5 p-3">
+            <label for="Campuses">KITCHENS AROUND: </label>
+            <select id='campuses' class=" me-4 border-success"  name="Campuses" id="Campuses">
+                <option class="select" value="4">4 KILO</option>
+                <option class="select" value="5">5 KILO</option>
+                <option class="select" value="6">6 KILO</option>
+            </select>
+        </section>        
+            <!-- <img class="_icon icon_0" class="pointers" src="images/icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px"> -->
+            
+        <div class="container-fluid">
+            <section class="d-flex flex-column gap-3 flex-md-row container-fluid">
+                <div class="col-1 flex-fill align-self-center d-none d-md-block text-center">
+                    <img class="pointers" src="images/icons/Left-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px"> 
+                </div>
+                <div class="flex-fill align-self-center text-center">
+                    <ul class="list-unstyled gap-3">
+                        <li class="list-unstyled mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="Foods.html">SARA COOKS</a></h1>
+                            <a href="Foods.html"><img class="img-fluid shadow-lg  rounded" width="400px"  src="images/Foods/beyaynet.jpg" alt="alternative" ></a><br>
+                            <div class="d-flex justify-content-center">
+                                <h2 class="rating">Rating: </h2>
+                                <div class="mt-2">
+                                    <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The rating of the Kitchen" width="20px" height="20px">
+                                    <img name="image" src="images/Icons/star1.ico" alt="This is the image athat shows The rating of the Kitchen" width="20px" height="20px">
+                                    <img name="image" src="images/Icons/star1.ico" alt="This is the image tbhat shows The rating of the Kitchen" width="20px" height="20px">
+                                    <img name="image" src="images/Icons/star1.ico" alt="This is the image tbhast shows The rating of the Kitchen" width="20px" height="20px">
+                                    <img name="image" src="images/Icons/star0.ico" alt="This is the image thbdat shows The rating of the Kitchen" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-unstyled mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="#">SARON COOKS</a></h1>
+                            <a href="Foods.html"><img src="images/Foods/misir.jpg" class="img-fluid" width="400px"  alt="The special food of the Called Kitchen" ><br>
+                            <div class="d-flex justify-content-center">
+                            <h2 class="text-center">Rating:</h2>
+                            <div class="mt-2">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image that shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image thatg shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image thavt shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image thaat shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star0.ico" alt="This is the image that wshows The rating of the Kitchen" width="20px" height="20px">
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-fill align-self-center text-center">
+                    <ul class=" list-unstyled gap-3">
+                        <li class="mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="Foods.html">CHALTU COOKS</a></h1>
+                            <a href="Foods.html"><img src="images/Foods/firfir.jpg" class="img-fluid" width="400px" alt="The picture of Firfir which is favour in the kitchen for many students " ></a><br>
+                            <div class="d-flex justify-content-center">
+                            <h2 class="text-center">Rating:</h2>
+                            <div class="mt-2">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image thdat shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image thavt shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image that b shows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the image that dashows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star0.ico" alt="This is the image that sahows The rating of the Kitchen" width="20px" height="20px">
+                            </div>
+                            </div>
+                        </li>
+                        <li class="mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="#">DEGITU COOKS</a></h1>
+                            <a href="Foods.html"><img class="img-fluid" width="400px" src="images/Foods/chechebsa.jpg" alt="DEGITU's SPECIAL MEAL" ></a>
+                            <div class="d-flex justify-content-center">
+                            <h2 class="text-center">Rating:</h2>
+                            <div class="mt-2">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the irvmage that sahows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the eimvage that shvows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thed image that shobws The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thae imsage that showns The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star0.ico" alt="This is the image tdshat showsg The rating of the Kitchen" width="20px" height="20px">
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-fill align-self-center text-center text-center d-none d-block d-sm-none d-xxl-block">
+                    <ul class=" list-unstyled mt-md-5">
+                        <li class="mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="#">Etag</a></h1>
+                            <a href="Foods.html"><img class="img-fluid" width="400px" src="images/pasta.jpeg" alt="DEGITU's SPECIAL MEAL" ></a>
+                            <div class="d-flex justify-content-center">
+                            <h2 class="text-center">Rating:</h2>
+                            <div class="mt-2">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the irvmage that sahows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the eimvage that shvows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thed image that shobws The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thae imsage that showns The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star0.ico" alt="This is the image tdshat showsg The rating of the Kitchen" width="20px" height="20px">
+                            </div>
+                            </div>
+                        </li>
+                        <li class="mt-5">
+                            <h1 class="kitchen_name"><a class="text-color-black text-decoration-none" href="#">04</a></h1>
+                            <a href="Foods.html"><img class="img-fluid" width="400px" class="img-fluid" min-width src="images/Foods/beyaynet.jpg" alt="DEGITU's SPECIAL MEAL" ></a>
+                            <div class="d-flex text-center">
+                            <h2 class="text-center">Rating:</h2>
+                            <div class="mt-2">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the irvmage that sahows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is the eimvage that shvows The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thed image that shobws The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star1.ico" alt="This is thae imsage that showns The rating of the Kitchen" width="20px" height="20px">
+                                <img name="image" src="images/Icons/star0.ico" alt="This is the image tdshat showsg The rating of the Kitchen" width="20px" height="20px">
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1 flex-fill align-self-center d-none d-md-block text-center">
+                    <img class="pointers" src="images/icons/Right-pointer.ico" alt="Point to The other kitchens which we saw before" width="30px" height="30px">
+                </div>
+            </section>
+        </div>
+    
+    </main>
+
+
+
+
+
+
+
+    <footer class="container-fluid bg-black mt-4">
+        <div class="row p-4">
+            <div class="col d-sm-flex">
+                <span class="text-white">Find Us On:</span>
+                <ul class="list-unstyled mt-5 d-sm-flex">
+                    <li class="me-5 mt-2"><a href="mailto:olexyit@gmail.com"><img src="images/icons/Email.ico" alt="email icon that redirects us to email" width="30px" height="30px"></a></li>
+                    <li class="me-5 mt-3"><a href="https://facebook.com"><img src="images/icons/Facebook.ico" alt="facebook icon redirecting us to facebook" width="30px" height="30px"></a></li>
+                    <li class="me-5 mt-3"><a href="tel:+251979657127"><img src="images/icons/Phone.ico" alt="phone item help us to call" width="30px" height="30px"></a></li>
+                    <li class="me-5 mt-3"><a href="t.me/@oliyitu"><img src="images/icons/Telegram.ico" alt="Telegram icon that redirecting us to Telegram" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <a class="text-white" href="Contacts.html#question">Do u have a Question?</a>
+            </div>
+    </footer>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

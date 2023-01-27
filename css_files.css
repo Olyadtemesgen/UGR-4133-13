@@ -1,0 +1,16 @@
+.background_img{
+    background-image: url('images/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.color{
+    background-color: rgba(0,0,0,0.8);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
