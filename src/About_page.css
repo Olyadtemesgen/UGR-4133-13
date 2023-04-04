@@ -17,184 +17,27 @@ body{
 .videos{
     z-index: 0px;
 }
-/* Header */
-.header{
-    min-height: 140px;
-    background-color: white;
-    background-image: linear-gradient(90deg,rgba(255,0,0,0) 0%,rgba(255,0,0,1) 100%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: sticky;
-    top: 0px;
-    opacity: 1;
-    z-index: 100px;
+.header_about_us{
+    background-image: url('images/about_us.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    min-width: 950px;
-    
+
 }
-.header:hover{
-    background-color: yellow;
-    transition: all 2s;
-}
-.header__comps{
-    width: 100%;
+
+.header_contents{
+    color: rgb(50, 50, 50);
     display: grid;
-    grid-gap: 10px;
-    text-align: center;
+    gap: 10px;
+    padding: 100px 0 140px 40px;
 }
-.header__comps__search_bar{
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    margin-top: 1.5em;
-}
-.header__comps__navs_container{
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-
-}
-.navbr__navs{
-    margin-top: 20px;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.header__comps__brand{
-    max-width: 150px;
-    height: 100px;
-    grid-row: 1/4;
-    margin-top: 0.6em;
-    margin-left: 4%;
-}
-.navbr__navs__hover_changed{
-    position: relative;
-}
-.hover__changed__sub_nav{
-    display: none;
-    position: absolute;
-    background-image: linear-gradient(180deg, rgba(255,255,0,0.4) 0%, rgba(255, 0, 0, 0.7));
-    top:19px;
-    min-width: 180px;
-    padding:20px 0px;
-}
-.hover__changed__sub_nav__sub_:hover{
-    background-color: rgba(80, 80, 80, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.navbr__navs__navs_individuals{
-    
-    margin: 0 25px;
-    text-transform: uppercase;
-    max-height: 20px;
-    color: black;
+.header_contents *{
     font-weight: bold;
+    font-size: larger;
 }
-.hover__changed__sub_nav__sub___anchor{
-    color: black;
+.header_contents h1{
+    font-size: 3rem;
 }
-.navbr__navs__navs_individuals > .hover__changed__sub_nav__sub___anchor:hover,
- .navbr__navs__navs_individuals > .hover__changed__sub_nav__sub_, 
-         .navbr__navs__hover_changed > .navbr__navs__navs_individuals__span:hover{
-    background-color: rgba(80, 80, 80, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-}
-.navbr__navs__hover_changed:hover .hover__changed__sub_nav{
-    display: block;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-}
-.header__comps__search_bar__search_form{
-    text-align: center;
-    background-color: orange; 
-    border-radius: 29px; 
-    border: 1px solid #081F2D; 
-    color: blue; 
-    font-size: 15px; 
-    padding: 5px 20px; 
-    cursor: pointer; 
-    transition: 0.3s;
-    min-width: 300px;
-    max-width: 400px;
-}
-.header__comps__search_bar__submit_btn{
-    background-color: rgb(0, 0, 128); 
-    border-radius: 29px; 
-    border: 1px solid #081F2D; 
-    color: orange; 
-    font-size: 15px; 
-    padding: 5px 20px; 
-    cursor: pointer; 
-    transition: 0.3s;
-    margin-left: 30px; 
-    }
-    
-.header__comps__search_bar__submit_btn:hover{ 
-    transition: 0.3s; 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
-}
-.header__comps__navs_container__toggle_button{
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 30px;
-}.header__comps__navs_container__toggle_button .bar{
-    height: 10px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-@media (max-width: 1000px){
-.header__comps__navs_container__toggle_button{
-        margin-left: 100px;
-        margin-top: 30px;
-        display: flex;
-        background-color: inherit;
-    }
-    .navbr{
-        display: none;
-        width: 100%;
-    }
-    .navbr__navs{
-        flex-direction: column;
-        width: 100%;
-    }
-    .navbr__navs .navbr__navs__navs_individuals{
-       text-align: left;
-    }
-    .navbr.active{
-        display: flex;
-    }
-    .navbr__navs__navs_individuals{
-        padding: 20px;
-    }
-    .header__comps__search_bar__search_form{
-        min-height: 30px;
-        font-size: larger;
-        margin-left: -70px;
-        min-width: 500px;
-
-    
-    }
-    .header{
-        min-height: 160px;
-    }
-    .navbr__navs__navs_individuals, 
-    .hover__changed__sub_nav__sub_ > .hover__changed__sub_nav__sub___anchor , 
-    .navbr__navs__hover_changed{
-        font-size: 30px;
-        color: black;
-       margin-bottom: 10px;
-    }
-
-}
-.body{
-    background-color: #1a1a1a;
-}
 /*Main */
 .main_page{
     margin-top: -50px;
@@ -202,6 +45,8 @@ body{
     
 }
 .table_of_contents__contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-left: 100px;
     margin-bottom: 60px;
     text-decoration: dashed !important;
@@ -210,21 +55,19 @@ body{
 .table_of_contents{
     background-color: white;
     min-width: 600px;
-    margin: 80px 80px;
-    border: 1px solid black;
+    margin: 80px 0 0 80px;
     box-shadow: 1px 2px 10px 5px white;
     padding: 20px;
-    max-width: 500px;
-    justify-content: center;
-    justify-items: center;
-    align-items: items;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* align-items: items; */
     line-height: 1.5em;
 }
 .define_motherbets{
     background-color: white;
     min-width: 800px;
     margin: 80px 80px;
-    border: 1px solid black;
+    
     box-shadow: 1px 2px 10px 5px white;
     padding: 80px;
     line-height: 1.5em;
@@ -242,7 +85,7 @@ body{
 .motivation{
     min-width: 800px;
     margin: 80px 80px;;
-    border: 1px solid black;
+    
     box-shadow: 1px 2px 10px 5px white;
     padding: 20px;
     line-height: 1.5em;
@@ -252,7 +95,7 @@ body{
     background-color: white;
     min-width: 800px;
     margin: 80px 80px;
-    border: 1px solid black;
+    
     box-shadow: 1px 2px 10px 5px white;
     padding: 20px;
     line-height: 1.5em;
@@ -273,7 +116,7 @@ body{
     min-width: 800px;
     background-color: white;
     margin: 80px 80px;
-    border: 1px solid black;
+    
     box-shadow: 1px 2px 10px 5px white;
     padding: 20px;
     max-height: 750px;
@@ -283,7 +126,7 @@ body{
     background-color: white;
     min-width: 800px;
     margin: 80px 80px;
-    border: 1px solid black;
+    
     box-shadow: 1px 2px 10px 5px white;
     padding: 20px;
     line-height: 1.5em;

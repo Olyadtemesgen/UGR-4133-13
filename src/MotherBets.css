@@ -155,7 +155,7 @@ body{
     height: 30px;
     width: 30px;
     background-color: white;
-    margin-top: 300px;
+    /* margin-top: 300px; */
     box-shadow:  2px 2px 2px 2px #888888;
 }
 .kitchen_name > a{

@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +12,9 @@ body{
      
   
     min-height: 100vh; 
+
 }
+
 .videos{
     z-index: 0px;
 }
@@ -89,9 +90,22 @@ body{
     color: black;
     font-weight: bold;
 }
+.navbr__navs__navs_individuals_1:hover{
+    scale: 1.1;
+    margin: 0 20px;
+}
+/* .navbr__navs__navs_individuals__span:hover{
+    scale: 1.1;
+    margin: 0 20px;
+} */
 .hover__changed__sub_nav__sub___anchor{
     color: black;
 }
+
+.hover__changed__sub_nav__sub___anchor:hover{
+    padding: 5px;
+}
+
 .navbr__navs__navs_individuals > .hover__changed__sub_nav__sub___anchor:hover,
  .navbr__navs__navs_individuals > .hover__changed__sub_nav__sub_, 
          .navbr__navs__hover_changed > .navbr__navs__navs_individuals__span:hover{
@@ -148,7 +162,10 @@ body{
     background-color: white;
     border-radius: 10px;
 }
-
+/* .navbr__navs__navs_individuals:hover{
+    scale: 1.1;
+    margin: 0 20px;
+} */
 /* Main */
 .main_page{
     min-width: 950px;
@@ -169,6 +186,7 @@ body{
     grid-template-columns: 1fr 4fr 6fr 1fr;
 }
 ._icon{
+    cursor: pointer;
     height: 30px;
     width: 30px;
     background-color: white;
@@ -177,11 +195,17 @@ body{
     border-radius: 15px;
     border: 15px solid white;
     width: 100%;
-    margin-bottom: 30px;
-    
+
+    margin-bottom: 30px;    
+}
+
+.main_page__upper_content__sponsor:hover{
+    scale: 1.05;
+    transition: all, 1s;
 }
 .icon_{
     margin: 300px auto;
+    cursor: pointer;
 }
 .main_page__upper_content__content_1{
     font-family: "Lucida Console", "Brush Script MT", cursive;
@@ -233,7 +257,7 @@ body{
 /* Footer */
 .footer{
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
+    /* grid-template-columns: 1fr 1fr !important; */
     min-width: 950px;
     min-height: 100px;
     margin-top: 100px;
@@ -243,24 +267,23 @@ body{
 }
 .footer__social__medias__medias{
     display: flex;
-    margin-left: 50px;
+    margin: 0 auto;
 }
 .footer__social__medias__medias .footer__social__medias__img{
    margin: 10px;
 }
-.footer__social_medias__inline-na{
+.footer__social_medias__inline-nav{
    margin-top: 10px;
 }
 .footer__social_medias{
-    padding: 10px;
     display: flex;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 .footer__QandA{
     margin-top: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 @media (max-width: 1000px){
@@ -311,6 +334,7 @@ body{
         ._icon{
             margin-top: 30px;
             margin-bottom: 30px;
+            cursor: pointer;
         }
         .main_page__upper_content__main_content_1{
             flex-direction: column;

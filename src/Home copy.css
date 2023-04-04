@@ -8,7 +8,7 @@
 }
 body{
   
-        /* font-family: "Lucida Console", "Brush Script MT", serif; */
+        font-family: "Lucida Console", "Brush Script MT", serif;
         font-weight: bold;
      
   
@@ -148,116 +148,89 @@ body{
     background-color: white;
     border-radius: 10px;
 }
-@media (max-width: 1000px){
-.header__comps__navs_container__toggle_button{
-        margin-left: 100px;
-        margin-top: 30px;
-        display: flex;
-        background-color: inherit;
-    }
-    .navbr{
-        display: none;
-        width: 100%;
-    }
-    .navbr__navs{
-        flex-direction: column;
-        width: 100%;
-    }
-    .navbr__navs .navbr__navs__navs_individuals{
-       text-align: left;
-    }
-    .navbr.active{
-        display: flex;
-    }
-    .navbr__navs__navs_individuals{
-        padding: 20px;
-    }
-    .header__comps__search_bar__search_form{
-        min-height: 30px;
-        font-size: larger;
-        margin-left: -70px;
-        min-width: 500px;
 
-    
-    }
-    .header{
-        min-height: 160px;
-    }
-    .navbr__navs__navs_individuals, 
-    .hover__changed__sub_nav__sub_ > .hover__changed__sub_nav__sub___anchor , 
-    .navbr__navs__hover_changed{
-        font-size: 30px;
-        color: black;
-       margin-bottom: 10px;
-    }
-    .content_1{
-        font-size: 50px;
-    }
-    .under_header{
-        font-size: 70px;
-    }
-    .footer{
-        margin-bottom:0px;
-    }
-    .main_content_1{
-        flex-direction: column;
-        justify-content: space-between;
-        min-width: 950px;
-        margin: 40px auto;
-        margin-top: 0px;
-        border-collapse: collapse;
-    }
-    ._icon{
-        display: none;
-    }
-    .content_1{
-        margin: 100px auto;
-        font-size: 24px;
-}
-}
+/* Main */
 .main_page{
-    padding: 60px;
-    text-align: center;
-    font-size: 30px;
-}
-.table{
-    width: 80%;
-    display: grid;
-    gap: 20px;
-    margin: 10%;
-    margin-top: 0px;
-    /* justify-content: space-around; */
-}
-.table > div{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    align-items: center;
-}
-  
-.table__tr__th{
-    display: flex;
-    gap: 10px;
-}
-.table__tr__th > div{
-    width: 140px;
-}
-.table__tr{
-    display: grid;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-.table__tr > *{
-    font-size: 20px;
-}
-.button_order{
-    width: 100px;
-    height: 30px;
+    min-width: 950px;
+    background-image: url('src/background.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
     color: white;
-    background-color: green;
-    border: none;
-    border-radius: 3px;
+    min-height: 700px;
 }
+.background{ 
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    background-size: cover;
+
+}
+.main_page__upper_content__main_content_1{
+    display: flex;
+    grid-template-columns: 1fr 4fr 6fr 1fr;
+}
+._icon{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+.main_page__upper_content__sponsor{
+    border-radius: 15px;
+    border: 15px solid white;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+.icon_{
+    margin: 300px auto;
+}
+.main_page__upper_content__content_1{
+    font-family: "Lucida Console", "Brush Script MT", cursive;
+    font-weight: bold;
+    margin: 268px auto;
+    font-size: 24px;
+}
+.main_page__upper_content{
+    text-align: center;
+    font-family: "Lucida Console", "Brush Script MT", cursive;
+    font-weight: bold;
+    
+}
+.main_page__upper_content__rating_container{
+    display: flex;
+    float: right;
+    margin-right: 100px;
+}
+.rating__container__stars{
+    margin-top: 5px;
+}
+
+
+.finder_where{
+    display: flex;
+    margin-left: 45%;
+}
+.finder_where__finder{
+    background-color: azure;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+.finder_where__first{
+    background-color: #707070;
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    border-radius: 14px;
+}
+.main_page__upper_content__under_header{
+    margin: 0px;
+    padding-top: 100px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+/* Footer */
 .footer{
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -289,3 +262,80 @@ body{
     color: white;
     font-size: 30px;
 }
+
+@media (max-width: 1000px){
+    .header__comps__navs_container__toggle_button{
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            background-color: inherit;
+        }
+        .navbr{
+            display: none;
+            width: 100%;
+        }
+        .navbr__navs{
+            flex-direction: column;
+            width: 100%;
+        }
+        .navbr__navs .navbr__navs__navs_individuals{
+           text-align: left;
+        }
+        .navbr.active{
+            display: flex;
+        }
+        .navbr__navs__navs_individuals{
+            padding: 20px;
+        }
+        .header__comps__search_bar__search_form{
+            min-height: 30px;
+            font-size: larger;
+            margin-left: -70px;
+            min-width: 500px;
+    
+        
+        }
+        .header{
+            min-height: 160px;
+        }
+        .navbr__navs__navs_individuals, 
+        .hover__changed__sub_nav__sub_ > .hover__changed__sub_nav__sub___anchor , 
+        .navbr__navs__hover_changed{
+            font-size: 30px;
+            color: black;
+           margin-bottom: 10px;
+        }
+        .footer{
+            margin-bottom:0px;
+        }
+        ._icon{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .main_page__upper_content__main_content_1{
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 40px auto;
+            margin-top: 0px;
+            border-collapse: collapse;
+        }
+    
+        .main_page__upper_content__content_1{
+            margin: 100px auto;
+            font-size: 24px;
+        }
+        .main_page__upper_content__content_1{
+            font-size: 50px;
+        }
+        .main_page__upper_content__under_header{
+            font-size: 70px;
+        }
+    }
+    @media (max-width:350px && min-height:750px){
+        .footer{
+            position: fixed;
+            bottom: 0px;
+        }
+    }  
+    

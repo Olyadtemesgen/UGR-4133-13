@@ -1,15 +1,37 @@
 const toggleButton = document.getElementsByClassName('header__comps__navs_container__toggle_button')[0]
-
+var docu = document.getElementsByClassName('hover__changed__sub_nav');
 const navbars = document.getElementsByClassName('navbr')[0]
+const login = document.getElementById("lgn")
+const signup = document.getElementById("sgn")
+const body = document.getElementsByTagName('body')
+const main_page = document.getElementsByClassName('main_page')[0];
+login.addEventListener('click',
+()=>{
+    docu[0].style.display = "block"
+    docu[1].style.display = 'none'
+})
+
+main_page.addEventListener('click',
+()=>{
+    docu[0].style.display = "none";
+    docu[1].style.display = "none"
+})
+
+signup.addEventListener('click',
+()=>{
+    docu[1].style.display = "block"
+    docu[0].style.display = "none"
+})
 
 toggleButton.addEventListener('click', () => {
     navbars.classList.toggle('active')
 })
+
 function outer(){
     var docu = document.getElementsByClassName('hover__changed__sub_nav');
     docu.style.display = block;
-
 }
+
 function changeImage() {
     var image = document.getElementById('sponsor');
     var info = document.getElementById('info_');
